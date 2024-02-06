@@ -1,9 +1,9 @@
 import java.util.Scanner;
 
-public class GradeCalculator {
+public class StudentGradeCalculator {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
+        // asking marks obtained in each subject
         System.out.print("Enter marks obtained in biology: ");
         int biologyMarks = scanner.nextInt();
 
@@ -13,9 +13,6 @@ public class GradeCalculator {
         System.out.print("Enter marks obtained in chemistry: ");
         int chemistryMarks = scanner.nextInt();
 
-        // Repeat the above steps for each subject
-        // ...
-
         scanner.close();
 
         int totalMarks = biologyMarks + geographyMarks + chemistryMarks + ...;
@@ -23,7 +20,7 @@ public class GradeCalculator {
         double averagePercentage = (double) totalMarks / numberOfSubjects;
 
         String grade;
-
+        // giving grades to percentages
         if (averagePercentage >= 90) {
             grade = "A";
         } else if (averagePercentage >= 80) {

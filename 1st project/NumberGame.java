@@ -15,12 +15,13 @@ public class NumberGame {
             int randomNumber = random.nextInt(100) + 1;
             int attempts = 0;
             boolean guessedCorrectly = false;
-
+            // Prompt usser to guess number
             while (!guessedCorrectly && attempts < 5) {
                 System.out.print("Enter your guess: ");
                 int userGuess = scanner.nextInt();
+                // increamenting attempts
                 attempts++;
-
+                // checking correct guess from user
                 if (userGuess == randomNumber) {
                     System.out.println("Congratulations! Your guess is correct.");
                     guessedCorrectly = true;

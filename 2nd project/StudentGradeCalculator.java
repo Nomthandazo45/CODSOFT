@@ -14,7 +14,8 @@ public class StudentGradeCalculator {
         int chemistryMarks = scanner.nextInt();
 
         scanner.close();
-
+        
+        // setting up values
         int totalMarks = biologyMarks + geographyMarks + chemistryMarks + ...;
         int numberOfSubjects = 3; // Assuming there are 3 subjects
         double averagePercentage = (double) totalMarks / numberOfSubjects;
